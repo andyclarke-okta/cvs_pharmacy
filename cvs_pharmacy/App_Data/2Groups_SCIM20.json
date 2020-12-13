@@ -1,0 +1,37 @@
+{
+  "totalResults": 2,
+  "schemas": [
+    "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+  ],
+  "Resources": [
+    {
+      "schemas": [
+
+        "urn:ietf:params:scim:schemas:core:2.0:Group"
+      ],
+      "id": "d009",
+      "displayName": "Customer Service",
+      "members": [
+        {
+          "value": "258005",
+          "display": "nina.jones@scimmemory.org"
+        }
+      ]
+    },
+    {
+      "schemas": [
+
+        "urn:ietf:params:scim:schemas:core:2.0:Group"
+
+      ],
+      "id": "d007",
+      "displayName": "Sales",
+      "members": [
+        {
+          "value": "258641",
+          "display": "kate.smith@scimmemory.org"
+        }
+      ]
+    }
+  ]
+}

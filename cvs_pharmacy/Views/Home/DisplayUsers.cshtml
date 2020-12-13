@@ -1,0 +1,105 @@
+﻿@model List<cvs_SCIM20.Okta.SCIM.Models.SCIMUser>
+
+@{
+    ViewData["Title"] = "DisplayUsers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>DisplayUsers</h1>
+
+<p>
+    @*<a asp-action="Create">Create New</a>*@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                userName
+            </th>
+            <th>
+                displayName
+            </th>
+            <th>
+                nickName
+            </th>
+            <th>
+                profileUrl
+            </th>
+            <th>
+                userType
+            </th>
+            <th>
+                title
+            </th>
+            <th>
+                preferredLanguage
+            </th>
+            <th>
+                locale
+            </th>
+            <th>
+                timezone
+            </th>
+            <th>
+                active
+            </th>
+            <th>
+                password
+            </th>
+            <th>
+                id
+            </th>
+            <th>
+                externalId
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.userName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.displayName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nickName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.profileUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.userType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.preferredLanguage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.locale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.timezone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.externalId)
+            </td>
+            <td>
+
+        </tr>
+}
+    </tbody>
+</table>

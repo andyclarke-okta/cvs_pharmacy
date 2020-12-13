@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewData["Title"] = "CVS SCIM";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="entry-box" class="rounded-6 sign-in-content">
+    <p id="demo"></p>
+    <fieldset style="display:block;">
+        <h2>CVS Pharmacy Family of Services</h2>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="docs-section" id="intro">
+                <p class="lead">This is protected content of Sample Application</p>
+                <p class="lead">Available only after successful authentication</p>
+            </div>
+        }
+        else
+        {
+            <div class="docs-section" id="intro">
+                <p class="lead">This is Unprotected landing page of Application</p>
+                <p class="lead">Use Login above to authenticate</p>
+            </div>
+        }
+    </fieldset>
+
+    <div>
+        <p>Shop Online for your Safety and Convenience</p>
+        <p>Your destination for cold support products and more</p>    
+        <p>Helping you stay prepared for cold and flu season with the essentials.</p>
+ 
+    </div>
+
+
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div>
+            <img src="~/img/cvs_pharmacy-940x640.jpg" />
+        </div>
+    }
+    @*else
+    {
+        <div>
+            <img src="~/img/cvs-pharmacy-1200.jpg" />
+        </div>
+    }*@
+
+<div class="card-group">
+    <div class="card">
+        <img src="~/img/CVS-ExtraCare-Card.jpg" class="card-img-top" alt="Commercial">
+        <div class="card-body">
+            <h5 class="card-title">ExtraCare</h5>
+            <p class="card-text">  </p>
+            @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+        </div>
+    </div>
+    <div class="card">
+        <img src="~/img/flu_shots.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Get Your Flu Shots</h5>
+            <p class="card-text"></p>
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="~/img/offer_dot.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Shop Online</h5>
+            <p class="card-text">  </p>
+
+        </div>
+    </div>
+
+</div>
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+
